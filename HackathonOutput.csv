@@ -1,0 +1,17 @@
+﻿solution,trade_group,trade_id,trial_id,entry_text,effective_date,maturity_date,tenor_years,pay_leg_notional,pay_leg_ccy,pay_leg_freq_months,pay_leg_basis,pay_leg_float_index,pay_leg_float_spread_bp,pay_leg_fixed_rate_pct,rec_leg_notional,rec_leg_ccy,rec_leg_freq_months,rec_leg_basis,rec_leg_float_index,rec_leg_float_spread_bp,rec_leg_fixed_rate_pct
+ExpectedResults,Scoring,1,0,"Ten year ESTR swap, we pay three and a half percent",,,10,,,,,,,3.5,,,,,ESTR,,
+ExpectedResults,Scoring,2,0,"We receive fixed on 10y swap at 3.1 percent, the index is 3m Term SOFR",,,10,,,,,3m Term SOFR,,,,,,,,,3.1
+ExpectedResults,Scoring,3,0,We pay fixed on 10y ESTR swap,,,10,,,,,,,,,,,,ESTR,,
+ExpectedResults,Scoring,4,0,We pay 5Y 4.25% vs SOFR on 100mm USD,,,5,100000000,USD,,,,,4.25,100000000,USD,,,SOFR,,
+ExpectedResults,Scoring,5,0,"Pay fixed on $500 million 7-year swap, starting March 23rd, 2026",3/23/2026,,7,500000000,USD,,,,,,500000000,USD,,,,,
+ExpectedResults,Scoring,6,0,"USD 2-year swap, paying 4.355% fixed vs SOFR, 500mm notional",,,2,500000000,,,,,,4.355,500000000,,,,3M SOFR,,
+ExpectedResults,Scoring,7,0,"5Y basis swap, pay SOFR rec ESTR + 20 bp",,,5,,,,,SOFR,,,,,,,ESTR,20,
+ExpectedResults,Scoring,8,0,"Swap paying GBP SONIA +11.5bps, receiving USD SOFR with
+2-year tenor on
+£500mm notional ",,,2,500000000,GBP,,11.5,SONIA,,,,USD,,,SOFR,,
+ExpectedResults,Scoring,9,0,"We executed a vanilla IRS, paying fixed at 3.25% and receiving 3m Term SOFR . The notional is $50 million, with quarterly resets on the floating leg. The fixed leg pays semi-annually, act/360.  Maturity July 19, 2023",,7/19/2023,,50000000,,6,act/360,,,3.25,50000000,,3,,3m Term SOFR,,
+ExpectedResults,Scoring,10,0,"Tenor: 7 years
+Pay EUR fixed: 4.10%
+Receive SOFR + 50 bps
+Notional: €50 million for $54 million
+Both legs are annual and 30/360",,,7,50000000,EUR,12,30/360,,,4.1,54000000,,12,30/360,SOFR,50,
